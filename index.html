@@ -1,0 +1,87 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+     <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="estilo.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="bootstrap.min.js"></script>
+        <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+        <script src="bootstrap.bundle.js"></script>
+        <script>window.$ = window.jQuery = require('jquery'); </script>
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+        <title>MatBRraille</title>
+    </head>
+
+    <body>
+    	<header class="menus">
+        <h3 id="nameProjeto">MatBRaille</h3>
+        <hr>
+         <div class="btn-group">
+      <div class="btn-group">
+        <button type="button" class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown">
+           Arquivo
+        </button>
+        <div class="dropdown-menu">
+           <a class="dropdown-item" onclick="emBreve()">Novo</a>
+            <hr>
+            <a class="dropdown-item" onclick="emBreve()">Abrir</a>
+            <hr>
+            <a class="dropdown-item" onclick="saveTextAsFile()">Salvar texto comum</a>
+            <hr>
+            <a class="dropdown-item" onclick="emBreve()">Imprimir</a>               
+        </div>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown">
+           Editar
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Em breve...</a>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown">
+           Equações
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Em breve...</a>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown">
+           Configurações
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Em breve...</a>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown">
+           Ajuda
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Em breve...</a>
+        </div>
+      </div>
+    </div>
+    </header>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="comment"></label>
+                    <textarea  oninput="capturar()" placeholder="Digite seu texto aqui..." class="form-control" id="tinta"></textarea>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="comment"></label>
+                    <textarea class="form-control" id="braille" ></textarea>
+                </div>
+        <script src="main.js"></script>
+    </body>
+
+    </html>
+

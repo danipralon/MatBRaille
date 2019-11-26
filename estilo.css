@@ -1,0 +1,63 @@
+body{
+    background: #F1F9F8;
+}
+hr{
+    border-color: #199FB1;
+}
+
+.row{
+    padding: 15px;
+}
+
+.menus{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bold;
+}
+
+.btn-outline-info{
+    font-weight: bold;
+}
+
+label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 10px;
+    text-align: right;
+    display:block; 
+}   
+
+#nameProjeto{
+    text-align: center;
+    color: #199FB1;
+    font-size: 25px;
+}
+
+ul.nav li.dropdown:hover
+{ 
+    background-color: #199FB1;
+}
+
+ul.nav li.dropdown:hover ul.dropdown-menu{ 
+    display: block; 
+}
+
+@font-face {
+    font-family: Braille29;
+    src: url('Braille29.ttf');
+}
+  
+#braille {
+    font-family: Braille29;
+    font-size: 25px;
+    height: 75vh;
+}
+
+#tinta{
+    font-size: 25px;
+    height: 75vh;
+}
+
+div.row{
+    margin: 0;
+}
