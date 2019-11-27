@@ -6,7 +6,7 @@ function capturar(params) {
   document.getElementById('braille').innerHTML = textTinta
 
   fs.writeFile('nome.txt',textTinta, () => {
-	  console.log('porra')
+	  console.log('pronto')
   })
 }
 
@@ -15,7 +15,7 @@ function saveTextAsFile()
 	var textToWrite = document.getElementById('tinta').value;
 	var textFileAsBlob = new Blob([textToWrite], {type:'text/plain'});
 	//var fileNameToSaveAs = document.getElementById("inputFileNameToSaveAs").value;
-  var fileNameToSaveAs =  "texto.docx"
+  	var fileNameToSaveAs =  "texto.txt"
 	var downloadLink = document.createElement("a");
 	downloadLink.download = fileNameToSaveAs;
 	downloadLink.innerHTML = "Download File";

@@ -15,8 +15,12 @@ hr{
     font-weight: bold;
 }
 
-.btn-outline-info{
-    font-weight: bold;
+#navbarNavDropdown{
+    background-color: #F1F9F8;   
+}
+
+.dropdown-menu{
+    background-color: #F1F9F8;  
 }
 
 label {
@@ -33,11 +37,6 @@ label {
     font-size: 25px;
 }
 
-ul.nav li.dropdown:hover
-{ 
-    background-color: #199FB1;
-}
-
 ul.nav li.dropdown:hover ul.dropdown-menu{ 
     display: block; 
 }
@@ -50,12 +49,12 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
 #braille {
     font-family: Braille29;
     font-size: 25px;
-    height: 75vh;
+    height: 70vh;
 }
 
 #tinta{
     font-size: 25px;
-    height: 75vh;
+    height: 70vh;
 }
 
 div.row{

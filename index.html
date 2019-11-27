@@ -12,61 +12,68 @@
         <script src="bootstrap.bundle.js"></script>
         <script>window.$ = window.jQuery = require('jquery'); </script>
         <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-        <title>MatBRraille</title>
+        <title>MatBRaille</title>
     </head>
 
     <body>
-    	<header class="menus">
+      <header class="menus">
         <h3 id="nameProjeto">MatBRaille</h3>
-        <hr>
-         <div class="btn-group">
-      <div class="btn-group">
-        <button type="button" class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown">
-           Arquivo
-        </button>
-        <div class="dropdown-menu">
-           <a class="dropdown-item" onclick="emBreve()">Novo</a>
-            <hr>
-            <a class="dropdown-item" onclick="emBreve()">Abrir</a>
-            <hr>
-            <a class="dropdown-item" onclick="saveTextAsFile()">Salvar texto comum</a>
-            <hr>
-            <a class="dropdown-item" onclick="emBreve()">Imprimir</a>               
-        </div>
-      </div>
-      <div class="btn-group">
-        <button type="button" class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown">
-           Editar
-        </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Em breve...</a>
-        </div>
-      </div>
-      <div class="btn-group">
-        <button type="button" class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown">
-           Equações
-        </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Em breve...</a>
-        </div>
-      </div>
-      <div class="btn-group">
-        <button type="button" class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown">
-           Configurações
-        </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Em breve...</a>
-        </div>
-      </div>
-      <div class="btn-group">
-        <button type="button" class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown">
-           Ajuda
-        </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Em breve...</a>
-        </div>
-      </div>
-    </div>
+        <hr>     
+        <nav class="navbar navbar-expand-lg navbar-light " id="menu">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown" >
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Arquivo
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Novo</a>
+                  <hr>
+                  <a class="dropdown-item" href="#">Abrir</a>
+                  <hr>
+                  <a class="dropdown-item" onclick="saveTextAsFile()">Salvar</a>
+                  <hr>
+                  <a class="dropdown-item" href="#">Imprimir</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Editar
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Em breve...</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Equações
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Em breve...</a>              
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Configurações
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Em breve...</a>              
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Ajuda
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Em breve...</a>              
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>    
     </header>
         <div class="row">
             <div class="col-md-6">
@@ -78,10 +85,9 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="comment"></label>
-                    <textarea class="form-control" id="braille" ></textarea>
+                    <p class="form-control" id="braille" ></p>
                 </div>
         <script src="main.js"></script>
     </body>
-
     </html>
 
